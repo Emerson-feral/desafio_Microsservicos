@@ -24,9 +24,6 @@ public class Pedido {
 
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     @JsonIgnore
-    //TODO
-//    @NonNull
-//    @NotEmpty
     private List<ItemDoPedido> itens;
 
 }
